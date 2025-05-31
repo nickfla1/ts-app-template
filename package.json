@@ -1,0 +1,24 @@
+{
+	"name": "ts-app-template",
+	"version": "1.0.0",
+	"packageManager": "yarn@4.9.1",
+	"type": "module",
+	"main": "src/index.ts",
+	"scripts": {
+		"dev": "node --watch src/index.ts",
+		"start": "node src/index.ts",
+		"lint": "biome check",
+		"lint:fix": "biome check --write",
+		"test": "borp",
+		"test:watch": "borp -w",
+		"test:coverage": "borp --coverage",
+		"postinstall": "lefthook install"
+	},
+	"devDependencies": {
+		"@biomejs/biome": "^1.9.4",
+		"@types/node": "^22.15.29",
+		"borp": "^0.20.0",
+		"lefthook": "^1.11.13",
+		"typescript": "^5.8.3"
+	}
+}
